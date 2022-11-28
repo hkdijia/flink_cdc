@@ -83,6 +83,7 @@ public class Flink_CDCWithCustomerSchema {
                 "MySQL Source");
         //4.打印数据
         mysqlDS.addSink(MyKafkaUtil.getKafkaSink("ods_base_db"));
+        
 
         //5.执行任务
         env.execute();
